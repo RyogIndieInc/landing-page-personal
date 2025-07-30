@@ -1,11 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Define el tipo de codificación de caracteres. Así me aseguro que los acentos, ñ, y símbolos se vean bien en todos los navegadores. -->
     <meta charset="UTF-8">
+    <!-- Optimiza mi sitio para que se vea bien en móviles. ¡Clave para buena experiencia y SEO -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Descripción de mi sitio/página web -->
+    <meta name="description" content="Descubre el perfil profesional de RyogDev: desarrollador web enfocado en diseño moderno, SEO efectivo y experiencias digitales personalizadas.">
+    <!-- Lista de palabras clave que describen mi sitio/página web -->
+    <meta name="keywords" content="RyogDev, desarrollador web, diseño web, SEO, landing page, programación, HTML, CSS, JavaScript, Netlify">
+    <!-- Le dice al navegador y a los motores que yo cree esta página -->
+    <meta name="author" content="RyogDev">
+    <!-- Indica que los buscadores pueden indexar mi sitio y seguir mis enlaces.-->
+    <meta name="robots" content="index, follow">
+    <!-- Evita contenido duplicado -->
+    <link rel="canonical" href="misitioweb">
+
+    <!-- Facebook y redes sociales (Open Graph) -->
+    <meta property="og:title" content="RyogDev | Landing page personal">
+    <meta property="og:description" content="Explora el trabajo y perfil profesional de RyogDev, especialista en desarrollo web moderno.">
+    <meta property="og:image" content="https://www.ryogdev.com/img/preview.jpg">
+    <meta property="og:url" content="https://www.ryogdev.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RyogDev | Landing page personal">
+    <meta name="twitter:description" content="Explora el trabajo y perfil profesional de RyogDev, especialista en desarrollo web moderno.">
+    <meta name="twitter:image" content="https://www.ryogdev.com/img/preview.jpg">
+    
+    <!-- Título de mi sitio/página web -->
+    <title>RyogDev | Landing page personal</title>
+
+    <!-- enlazando con css externo para dar estilo -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Si alguien guarda mi sitio en su iPhone, este es el ícono que se muestra.-->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#sobre-mí">Sobre mí</a>
+            <a href="#contacto">Contacto</a>
+            <button>Contratar</button>
+        </nav>
+        <img src="/img/preview.jpg" alt="Foto profesional de RyogDev, desarrollador web">
+        <h1><strong>RyogDev | Landing page personal</strong></h1>
+    </header>
+
+    <main>
+        <section id="inicio">
+
+        </section>
+
+        <section id="servicios">
+
+        </section>
+
+        <section id="portafolio">
+
+        </section>
+
+        <section id="sobre-mí">
+        
+        </section>
+
+
+    </main>
+
+    <footer>
+        <section id="contacto">
+            <div id="front-footer">
+                <h1>¿Tienes un proyecto en mente?</h1>
+                <p>Estoy disponible para nuevos proyectos y colaboraciones. Hablemos sobre cómo puedo ayudarte a hacer realidad tu idea.</p>
+            </div>
+
+            <!-- div de contacto -->
+            <div id="info-contacto">
+                <h3>Información de contacto</h3>
+                <a href="mailto:ryogdev@gmail.com" target="_blank">Correo electrónico</a>
+                <a href="tel:+51934601831" target="_blank">Número celular</a>
+                <a href="https://wa.me/51934601831" target="_blank">WhatsApp</a>
+                <a href="https://github.com/RyogIndieInc" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/ronny-olivares-dev/" target="_blank">LinkedIn</a>
+                <a href="https://x.com/RyogDev" target="_blank">X (Twitter)</a>
+            </div>
+
+            <!-- div servicios rápido -->
+            <div>
+                <h3>¿En qué puedo ayudarte?</h3>
+                <ul>
+                    <li>Desarrollo Web</li>
+                    <li>Desarrollo de videojuegos</li>
+                    <li>Diseño de UX/UI</li>
+                    <li>Modelado y animación 3D</li>
+                    <li>Creación de VFX/SFX</li>
+                </ul>
+            </div>
+
+            <!-- div de formulario -->
+            <div id="formulario">
+                <h1>Envíame un mensaje</h1>
+                <p>Completa el formulario y te responderé lo antes posible</p>
+                <form action="mailto:ryogdev@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="Nombre" id="name" placeholder="Tu nombre" required>
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="email" name="Email" id="email" placeholder="example@email.com" required>
+                    <br>
+                    <label for="asunto">Asunto</label>
+                    <input type="text" name="Asunto" id="asunto" placeholder="¿En qué te puedo ayudar?" required>
+                    <br>
+                    <label for="comentario">Comentario</label>
+                    <textarea name="Comentario" id="comentario" placeholder="Cuéntame sobre tu proyecto..."></textarea>
+                    <br>
+                    <button>Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h4>RyogDev</h4>
+                <p>Creando experiencias digitales extraordinarias a través del desarrollo web, videojuegos y modelado 3D.</p>
+            </div>
+
+            <div id="footer-servicios">
+                <ul>
+                    <li>Desarrollo Web</li>
+                    <li>Videojuegos</li>
+                    <li>Modelado 3D</li>
+                    <li>Diseñador de UX/UI</li>
+                    <li>Creador de VFX/SFX</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Enlaces</h4>
+                <ul id="footer-enlaces">
+                    <li>Cv-web</li>
+                    <li>Portfolio personal</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Sígueme</h4>
+                <ul id="footer-sigueme">
+                    <li><a href="https://github.com/RyogIndieInc" target="_blank" style="color: #000; font-size: 24px;"><i class="fab fa-github"></i></a></li>
+
+                    <li><a href="https://www.linkedin.com/in/ronny-olivares-dev/" target="_blank" style="color: #0077B5; font-size: 24px;"><i class="fab fa-linkedin"></i></a></li>
+                    
+                    <li><a href="https://x.com/RyogDev" target="_blank" style="color: #1DA1F2; font-size: 24px;"><i class="fab fa-x-twitter"></i></a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>

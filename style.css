@@ -1,0 +1,34 @@
+body {
+    background-color: #111;
+    color: #00fa9a;
+}
+
+img {
+    width: 150px;
+    height: auto;
+}
+
+#formulario {
+    border: solid 0.5px #ddd;
+    padding: 5px 5px 40px 20px;
+    background-color: #555;
+}
+
+#formulario button {
+    background-color: #00fa9a;
+}
+
+#footer-enlaces {
+    list-style: none;
+}
+
+#footer-enlaces li {
+    padding: 5px;
+}
+
+#footer-sigueme {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
