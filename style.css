@@ -3,9 +3,119 @@ body {
     color: #00fa9a;
 }
 
-img {
-    width: 150px;
-    height: auto;
+/* NAV completo */
+#navbar {
+    display: flex;                       /* alineación horizontal */
+    justify-content: space-between;     /* separa los tres bloques */
+    align-items: center;                /* centra verticalmente */
+    background-color: #555;
+    border-bottom: 0.5px solid #ddd;
+    padding: 10px 40px;
+}
+
+/* Bloques internos */
+.navbar-left,
+.navbar-center,
+.navbar-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+/* LOGO alineado a la izquierda */
+.logo {
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Menú centrado */
+.navbar-center {
+    justify-content: center;
+}
+
+.navbar-center ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-center a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Botón alineado a la derecha */
+.navbar-right {
+    justify-content: flex-end;
+}
+
+.navbar-right button {
+    background-color: #00fa9a;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: #000;
+}
+
+
+/* LOGOTIPO */
+.logo {
+    background-color: #000;
+    color: #00fa9a;
+    font-family: serif;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    margin: auto;
+    box-shadow: 0 0 10px #00fa9a;
+}
+
+.list-habilidades {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 50px 0 0 10px;
+}
+
+.list-habilidad1 {
+    background-color: #cce5ff;  /* azul claro */
+    color: #004085;             /* azul más oscuro dentro de la misma gama */
+    padding: 8px 12px;
+    border: 1px solid #b8daff;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list-habilidad2 {
+    background-color: #d4edda;  /* verde pastel */
+    color: #155724;             /* verde intenso */
+    padding: 8px 12px;
+    border: 1px solid #c3e6cb;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list-habilidad3 {
+    background-color: #f8d7da;  /* rosa suave */
+    color: #721c24;             /* rosa oscuro */
+    padding: 8px 12px;
+    border: 1px solid #f5c6cb;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 80px;
 }
 
 #formulario {
@@ -31,4 +141,12 @@ img {
     display: flex;
     gap: 15px;
     padding: 0;
+}
+
+#footer-piedepagina {
+    background-color: #555;
+}
+
+#p-derechosreservados {
+    text-align: center;
 }

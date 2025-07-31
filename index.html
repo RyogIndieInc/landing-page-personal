@@ -14,13 +14,13 @@
     <!-- Indica que los buscadores pueden indexar mi sitio y seguir mis enlaces.-->
     <meta name="robots" content="index, follow">
     <!-- Evita contenido duplicado -->
-    <link rel="canonical" href="misitioweb">
+    <link rel="canonical" href="https://ryogindieinc.github.io/landing-page-personal/">
 
     <!-- Facebook y redes sociales (Open Graph) -->
     <meta property="og:title" content="RyogDev | Landing page personal">
     <meta property="og:description" content="Explora el trabajo y perfil profesional de RyogDev, especialista en desarrollo web moderno.">
     <meta property="og:image" content="https://www.ryogdev.com/img/preview.jpg">
-    <meta property="og:url" content="https://www.ryogdev.com/">
+    <meta property="og:url" content="https://ryogindieinc.github.io/landing-page-personal/">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card -->
@@ -41,17 +41,45 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#portafolio">Portafolio</a>
-            <a href="#sobre-mí">Sobre mí</a>
-            <a href="#contacto">Contacto</a>
-            <button>Contratar</button>
+        <nav id="navbar">
+            <div class="navbar-left">
+                <img src="./img/logo-ryogdev.png" alt="Logotipo de RyogDev" class="logo">
+            </div>
+
+            <div class="navbar-center">
+                <ul id="navbar-ul">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#sobre-mí">Sobre mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            </div>
+            
+            <div class="navbar-right">
+                <button>Contratar</button>
+            </div>
         </nav>
-        <img src="img/preview.jpg" alt="Foto profesional de RyogDev, desarrollador web">
-        <h1><strong>RyogDev | Landing page personal</strong></h1>
+        
     </header>
+    <div>
+        <ul class="list-habilidades">
+            <li class="list-habilidad1">Full-Stack Developer</li>
+            <li class="list-habilidad2">Game Developer</li>
+            <li class="list-habilidad3">3D Modeler</li>
+        </ul>
+    </div>
+    <div>
+        <h1><strong>Creo experiencias digitales extraordinarias</strong></h1>
+        <p>Desarrollador especializado en aplicaciones web, videojuegos y modelado 3D. Transformo ideas creativas en soluciones digitales innovadoras y funcionales.</p>
+        <button>Ver porftolio</button>
+        <button>Contactar</button>
+        <ul>
+            <li><strong>1</strong><br>Proyectos</li>
+            <li><strong>1</strong><br>Años exp.</li>
+            <li><strong>1</strong><br>Clientes</li>
+        </ul>
+    </div>
 
     <main>
         <section id="inicio">
@@ -73,10 +101,11 @@
 
     </main>
 
+    <!-- FOOTER - PIE DE PÁGINA-->
     <footer>
         <section id="contacto">
             <div id="front-footer">
-                <h1>¿Tienes un proyecto en mente?</h1>
+                <h2>¿Tienes un proyecto en mente?</h2>
                 <p>Estoy disponible para nuevos proyectos y colaboraciones. Hablemos sobre cómo puedo ayudarte a hacer realidad tu idea.</p>
             </div>
 
@@ -120,15 +149,15 @@
                     <label for="comentario">Comentario</label>
                     <textarea name="Comentario" id="comentario" placeholder="Cuéntame sobre tu proyecto..."></textarea>
                     <br>
-                    <button>Enviar mensaje</button>
+                    <button aria-label="Enviar mensaje">Enviar mensaje</button>
                 </form>
             </div>
         </section>
 
-        <section>
+        <section id="footer-piedepagina">
             <div>
                 <h4>RyogDev</h4>
-                <p>Creando experiencias digitales extraordinarias a través del desarrollo web, videojuegos y modelado 3D.</p>
+                <p>Creando experiencias digitales extraordinarias a través del desarrollo web, videojuegos, modelado 3D, diseños UX/UI y VFX/SFX.</p>
             </div>
 
             <div id="footer-servicios">
@@ -160,6 +189,8 @@
                     
                     <li><a href="https://x.com/RyogDev" target="_blank" style="color: #1DA1F2; font-size: 24px;"><i class="fab fa-x-twitter"></i></a></li>
                 </ul>
+                <hr>
+                <p id="p-derechosreservados">© 2025 RyogDev. Todos los derechos reservados.</p>
             </div>
         </section>
     </footer>
