@@ -116,37 +116,38 @@ body {
 
 h1 {
     font-size: 80px;
+    
 }
 
-#formulario {
+.formulario {
     border: solid 0.5px #ddd;
     padding: 5px 5px 40px 20px;
     background-color: #555;
 }
 
-#formulario button {
+.formulario button {
     background-color: #00fa9a;
 }
 
-#footer-enlaces {
+.footer-enlaces {
     list-style: none;
 }
 
-#footer-enlaces li {
+.footer-enlaces li {
     padding: 5px;
 }
 
-#footer-sigueme {
+.footer-sigueme {
     list-style: none;
     display: flex;
     gap: 15px;
     padding: 0;
 }
 
-#footer-piedepagina {
+.footer-piedepagina {
     background-color: #555;
 }
 
-#p-derechosreservados {
+.p-derechosreservados {
     text-align: center;
 }

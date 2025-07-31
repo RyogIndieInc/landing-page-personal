@@ -33,17 +33,20 @@
     <title>RyogDev | Landing page personal</title>
 
     <!-- enlazando con css externo para dar estilo -->
-    <link rel="stylesheet" href="style.css">
+    
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Si alguien guarda mi sitio en su iPhone, este es el ícono que se muestra.-->
     <link rel="apple-touch-icon" href="apple-touch-icon.png">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--CABEZA DE LA PÁGINA -->
     <header>
+        <!-- BARRA DE NAVEGACIÓN -->
         <nav id="navbar">
             <div class="navbar-left">
-                <img src="./img/logo-ryogdev.png" alt="Logotipo de RyogDev" class="logo">
+                <img src="./img/logo-ryogdev.png" alt="Logotipo de RyogDev" class="logo" width="100px" height="50px">
             </div>
 
             <div class="navbar-center">
@@ -62,38 +65,62 @@
         </nav>
         
     </header>
-    <div>
-        <ul class="list-habilidades">
-            <li class="list-habilidad1">Full-Stack Developer</li>
-            <li class="list-habilidad2">Game Developer</li>
-            <li class="list-habilidad3">3D Modeler</li>
-        </ul>
-    </div>
-    <div>
-        <h1><strong>Creo experiencias digitales extraordinarias</strong></h1>
-        <p>Desarrollador especializado en aplicaciones web, videojuegos y modelado 3D. Transformo ideas creativas en soluciones digitales innovadoras y funcionales.</p>
-        <button>Ver porftolio</button>
-        <button>Contactar</button>
-        <ul>
-            <li><strong>1</strong><br>Proyectos</li>
-            <li><strong>1</strong><br>Años exp.</li>
-            <li><strong>1</strong><br>Clientes</li>
-        </ul>
-    </div>
 
+    <!-- MAIN - CUERPO DE LA PÁGINA -->
     <main>
+        <!-- SECCIÓN 1: INICIO-->
         <section id="inicio">
+        <!-- INICIO DEL LANDING PAGE PERSONAL -->
+            <div>
+                <div>
+                <!-- contenedor del encabezado principal -->
+                    <div>
+                        <!-- lista de habilidades encima del encabezado principal -->
+                        <ul class="list-habilidades">
+                            <li class="list-habilidad1">Full-Stack Developer</li>
+                            <li class="list-habilidad2">Game Developer</li>
+                            <li class="list-habilidad3">3D Modeler</li>
+                        </ul>
 
+                    <!-- Encabezado principal con su párrafo -->
+                        <h1><strong>Creo experiencias <span class="color-encabezado">digitales</span> extraordinarias</strong></h1>
+                        <p>Desarrollador especializado en aplicaciones web, videojuegos y modelado 3D. Transformo ideas creativas en soluciones digitales innovadoras y funcionales.</p>
+                    </div>
+            
+                <!-- Botones de acción del encabezado principal -->
+                    <div>
+                        <button>Ver porftolio</button>
+                        <button>Contactar</button>
+                    </div>
+
+                <!-- Mostrando info importante en el encabezado-->
+                    <div>
+                        <ul>
+                            <li><strong>1</strong><br>Proyectos</li>
+                            <li><strong>1</strong><br>Años exp.</li>
+                            <li><strong>1</strong><br>Clientes</li>
+                        </ul>
+                    </div>
+
+                <!-- Imagen del logotipo ampliada en el encabezado-->
+                    <div>
+                        <img src="./img/logo-ryogdev.png" alt="Logotipog ampliado de RyogDev en el encabezado" width="400px">
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <!-- SECCIÓN 2: SERVICIOS -->
         <section id="servicios">
 
         </section>
 
+        <!-- SECCIÓN 3: PORTFOLIO -->
         <section id="portafolio">
 
         </section>
 
+        <!-- SECCIÓN 4: SOBRE MÍ -->
         <section id="sobre-mí">
         
         </section>
@@ -101,16 +128,18 @@
 
     </main>
 
-    <!-- FOOTER - PIE DE PÁGINA-->
+    <!-- FOOTER - PIE DE PÁGINA -->
     <footer>
+        <!-- SECCIÓN 5: CONTACTO -->
         <section id="contacto">
-            <div id="front-footer">
+            <!-- div inicial de footer -->
+            <div class="front-footer">
                 <h2>¿Tienes un proyecto en mente?</h2>
                 <p>Estoy disponible para nuevos proyectos y colaboraciones. Hablemos sobre cómo puedo ayudarte a hacer realidad tu idea.</p>
             </div>
 
             <!-- div de contacto -->
-            <div id="info-contacto">
+            <div class="info-contacto">
                 <h3>Información de contacto</h3>
                 <a href="mailto:ryogdev@gmail.com" target="_blank">Correo electrónico</a>
                 <a href="tel:+51934601831" target="_blank">Número celular</a>
@@ -123,7 +152,7 @@
             <!-- div servicios rápido -->
             <div>
                 <h3>¿En qué puedo ayudarte?</h3>
-                <ul>
+                <ul class="list-service">
                     <li>Desarrollo Web</li>
                     <li>Desarrollo de videojuegos</li>
                     <li>Diseño de UX/UI</li>
@@ -133,7 +162,7 @@
             </div>
 
             <!-- div de formulario -->
-            <div id="formulario">
+            <div class="formulario">
                 <h1>Envíame un mensaje</h1>
                 <p>Completa el formulario y te responderé lo antes posible</p>
                 <form action="mailto:ryogdev@gmail.com" method="post" enctype="text/plain">
@@ -154,13 +183,13 @@
             </div>
         </section>
 
-        <section id="footer-piedepagina">
+        <section class="footer-piedepagina">
             <div>
                 <h4>RyogDev</h4>
                 <p>Creando experiencias digitales extraordinarias a través del desarrollo web, videojuegos, modelado 3D, diseños UX/UI y VFX/SFX.</p>
             </div>
 
-            <div id="footer-servicios">
+            <div class="footer-servicios">
                 <ul>
                     <li>Desarrollo Web</li>
                     <li>Videojuegos</li>
@@ -172,7 +201,7 @@
 
             <div>
                 <h4>Enlaces</h4>
-                <ul id="footer-enlaces">
+                <ul class="footer-enlaces">
                     <li>Cv-web</li>
                     <li>Portfolio personal</li>
                     <li></li>
@@ -182,7 +211,7 @@
 
             <div>
                 <h4>Sígueme</h4>
-                <ul id="footer-sigueme">
+                <ul class="footer-sigueme">
                     <li><a href="https://github.com/RyogIndieInc" target="_blank" style="color: #000; font-size: 24px;"><i class="fab fa-github"></i></a></li>
 
                     <li><a href="https://www.linkedin.com/in/ronny-olivares-dev/" target="_blank" style="color: #0077B5; font-size: 24px;"><i class="fab fa-linkedin"></i></a></li>
@@ -190,7 +219,7 @@
                     <li><a href="https://x.com/RyogDev" target="_blank" style="color: #1DA1F2; font-size: 24px;"><i class="fab fa-x-twitter"></i></a></li>
                 </ul>
                 <hr>
-                <p id="p-derechosreservados">© 2025 RyogDev. Todos los derechos reservados.</p>
+                <p class="p-derechosreservados">© 2025 RyogDev. Todos los derechos reservados.</p>
             </div>
         </section>
     </footer>
