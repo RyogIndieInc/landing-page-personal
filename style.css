@@ -65,7 +65,7 @@ body {
 
 /* LOGOTIPO */
 .logo {
-    background-color: #000;
+    background-color: #222222;
     color: #00fa9a;
     font-family: serif;
     border-radius: 50%;
@@ -78,6 +78,12 @@ body {
     font-size: 1rem;
     margin: auto;
     box-shadow: 0 0 10px #00fa9a;
+}
+
+figure img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
 .list-habilidades {
